@@ -4,9 +4,10 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "start": "nodemon lib/index.js --exec babel-node",
     "build": "babel lib -d dist",
+    "lint": "./node_modules/.bin/eslint lib",
     "serve": "node dist/index.js",
+    "start": "nodemon lib/index.js --exec babel-node",
     "test": "jest"
   },
   "keywords": [],
@@ -16,7 +17,14 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "jest": "^23.6.0",
     "nodemon": "^1.18.5"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7"
   }
 }
