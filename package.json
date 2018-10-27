@@ -2,12 +2,12 @@
   "name": "gaia",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "lib/server.js",
   "scripts": {
     "build": "babel lib -d dist",
     "lint": "./node_modules/.bin/eslint lib",
-    "serve": "node dist/index.js",
-    "start": "nodemon lib/index.js --exec babel-node",
+    "serve": "node dist/server.js",
+    "start": "nodemon lib/server.js --exec babel-node",
     "test": "jest"
   },
   "keywords": [],
@@ -24,6 +24,7 @@
     "nodemon": "^1.18.5"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.3.7"
   }
