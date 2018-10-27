@@ -2,12 +2,12 @@
   "name": "gaia",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/server.js",
+  "main": "src/server.js",
   "scripts": {
-    "build": "babel lib -d dist",
-    "lint": "./node_modules/.bin/eslint lib",
+    "build": "babel src -d dist",
+    "lint": "./node_modules/.bin/eslint src",
     "serve": "node dist/server.js",
-    "start": "nodemon lib/server.js --exec babel-node",
+    "start": "nodemon src/server.js --exec babel-node",
     "test": "jest"
   },
   "keywords": [],
