@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src",
+    "lint": "eslint src",
     "serve": "node src/server",
     "start": "nodemon src/server.js",
     "test": "jest"
