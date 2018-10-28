@@ -1,7 +1,7 @@
-import { Router } from 'express';
-import { userController } from '../controllers';
+const express = require('express');
+const { userController } = require('../controllers');
 
-const router = Router();
+const router = express.Router();
 
 const routes = {
   get: (request, response) => response.send('Hello, world!'),
@@ -15,4 +15,4 @@ router.map = (a, route = '') => Object.keys(a).forEach((key) => {
 
 router.map(routes);
 
-export default router;
+module.exports = router;

@@ -1,5 +1,5 @@
-import User from './user';
+const User = require('./user');
 
-export { User };
-
-export default { User };
+module.exports = {
+  User,
+};

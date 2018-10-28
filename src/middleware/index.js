@@ -1,6 +1,6 @@
-import { json, urlencoded } from 'body-parser';
+const bodyParser = require('body-parser');
 
-export default [
-  json(),
-  urlencoded({ extended: true }),
+module.exports = [
+  bodyParser.json(),
+  bodyParser.urlencoded({ extended: true }),
 ];

@@ -1,4 +1,4 @@
-import { User } from '../models';
+const { User } = require('../models');
 
 const controller = {
   get: async (request, response) => {
@@ -15,4 +15,4 @@ const controller = {
   */
 };
 
-export default controller;
+module.exports = controller;
