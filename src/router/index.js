@@ -4,7 +4,6 @@ const { userController } = require('../controllers');
 const router = express.Router();
 
 const routes = {
-  get: (request, response) => response.send('Hello, world!'),
   '/users': userController,
 };
 
